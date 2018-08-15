@@ -1,0 +1,13 @@
+query($menuId: ID!) {
+  menuItems(menuId: $menuId) {
+    items {
+      id
+      ordering
+      title
+      menuId
+      parentId
+      actionCode
+      actionArgs
+    }
+  }
+}

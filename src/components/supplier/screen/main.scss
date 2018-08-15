@@ -1,0 +1,38 @@
+.screen-index {
+  background-color: #fff;
+  .location {
+    padding-left: 15px;
+  }
+  .category{
+    padding-left: 15px;
+    .checkbox-box{
+      .van-button{
+        margin: 5px 10px 5px 0;
+      }
+    }
+  }
+  .btn-box{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-start;
+    .btn{
+      height: 45px;
+      line-height: 45px;
+      width: 50%;
+      text-align: center;
+      &.reset{
+        background-color: #E7E7E7;
+      }
+      &.confirm{
+        color: #fff;
+        background-color: #1F8CEB;
+      }
+    }
+  }
+  .van-button{
+    height: 30px;
+    line-height: 26px;
+  }
+}

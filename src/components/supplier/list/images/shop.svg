@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1169 1755 30 15">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #ff8100;
+        stroke-width: 0.5px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #ff8100;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+        font-family: YuGothicUI-Regular, Yu Gothic UI;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-10{
+        fill: white;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="ic_shop" transform="translate(1098 1494)">
+    <g id="Rectangle_45" data-name="Rectangle 45" class="cls-1" transform="translate(71 261)">
+      <rect class="cls-5" width="30" height="15"/>
+      <rect class="cls-6" x="0.25" y="0.25" width="29.5" height="14.5"/>
+    </g>
+    <rect id="Rectangle_46" data-name="Rectangle 46" class="cls-2" width="14" height="15" transform="translate(71 261)"/>
+    <!-- <g id="Group_42" data-name="Group 42" transform="translate(73 264.193)">
+      <path id="Path_10" data-name="Path 10" class="cls-3" d="M.307,8.459a.294.294,0,1,0,0,.587H9.524a.293.293,0,1,0,0-.585H8.909V4.555A1.223,1.223,0,0,0,9.67,3.411l-.844-2.24H.974L.161,3.411A1.223,1.223,0,0,0,.922,4.553V8.459ZM6.451,4.582a1.22,1.22,0,0,0,.843-1.171,1.215,1.215,0,0,0,1,1.21V8.461H6.451V4.582ZM1.536,4.62a1.212,1.212,0,0,0,1-1.21,1.19,1.19,0,1,0,2.378,0A1.207,1.207,0,0,0,6.1,4.636h.04V8.459H1.536V4.62ZM8.649.682a.349.349,0,0,0,.358-.34A.351.351,0,0,0,8.649,0H1.129A.348.348,0,0,0,.774.34a.349.349,0,0,0,.354.34H8.649Z" transform="translate(0 0)"/>
+    </g> -->
+    <text id="Group_42" data-name="Group 42" class="cls-4 cls-10" transform="translate(73 272)"><tspan x="0" y="0">微</tspan></text>
+    <text id="店" class="cls-4" transform="translate(88 272)"><tspan x="0" y="0">店</tspan></text>
+  </g>
+</svg>

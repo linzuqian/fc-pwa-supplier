@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1169 1755 30 15">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #ff8100;
+        stroke-width: 0.5px;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #ff8100;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+        font-family: YuGothicUI-Regular, Yu Gothic UI;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+
+      .cls-10{
+        fill: white;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="ic_shop" transform="translate(1098 1494)">
+    <g id="Rectangle_45" data-name="Rectangle 45" class="cls-1" transform="translate(71 261)">
+      <rect class="cls-5" width="30" height="15"/>
+      <rect class="cls-6" x="0.25" y="0.25" width="29.5" height="14.5"/>
+    </g>
+    <rect id="Rectangle_46" data-name="Rectangle 46" class="cls-2" width="14" height="15" transform="translate(71 261)"/>
+    <text id="Group_42" data-name="Group 42" class="cls-4 cls-10" transform="translate(73 272)"><tspan x="0" y="0">个</tspan></text>
+    <text class="cls-4" transform="translate(88 272)"><tspan x="0" y="0">体</tspan></text>
+  </g>
+</svg>

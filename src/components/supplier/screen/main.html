@@ -1,0 +1,19 @@
+<div class="screen-index">
+  <div class="location">
+    <h3>所在地</h3>
+    <van-button type="default" class="location-search" @click="openSearch">请选择地区</van-button>
+  </div>
+  <div class="category">
+    <h3>服装</h3>
+    <div class="checkbox-box">
+      <van-button type="default"  v-for="item in 5">五金类</van-button>
+    </div>
+  </div>
+  <div class="btn-box">
+    <div class="btn reset">重置</div>
+    <div class="btn confirm">确定</div>
+  </div>
+  <van-popup v-model="search" position="bottom" :overlay="false">
+    <van-area></van-area>
+  </van-popup>
+</div>

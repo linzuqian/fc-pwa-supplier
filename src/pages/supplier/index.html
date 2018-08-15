@@ -1,0 +1,38 @@
+<div class="supplier-index">
+  <div class="supplier-header">
+    <div class="header-search" @click="openSearch">
+      <van-icon name="search" />找企业
+    </div>
+    <van-button type="default" :class="{'active': currentType == 'company'}" @click="changeCompanyType('company')">企业</van-button>
+    <van-button type="default" :class="{'active': currentType == 'merchants'}" @click="changeCompanyType('merchants')">商户</van-button>
+    <div class="header-brush" @click="openRight">筛选</div>
+  </div>
+  <div class="supplier-body">
+    <van-tabs v-model="active">
+      <van-tab  v-for="(elem,index) in menuList" :title="elem.title" :key="index">
+        <supplier-list 
+          :actionArgs="getActionArgs(elem)" 
+          :isCurrent="index === active" 
+          :key="index"
+          :filterParams="filterParams" 
+          :filterArea="filterArea">
+        </supplier-list>
+      </van-tab>
+    </van-tabs>
+  </div>
+  <van-popup 
+    v-model="showLeft"
+    position="left"
+    class="popup-search"
+    >
+    <search @closes="openSearch"></search>
+  </van-popup>
+  <van-popup 
+    v-model="showRight"
+    position="right" 
+    :overlay="true"
+    :overlay-style="{'background-color':'rgba(1,7,14,.35)'}"
+    class="popup-screen">
+   <screen></screen>
+  </van-popup>
+</div>

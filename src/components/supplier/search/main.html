@@ -1,0 +1,15 @@
+<div class="search-index">
+  <div class="search-header">
+    <van-search
+      v-model="searchcContent"
+      placeholder="请输入搜索关键词"
+      show-action
+      @search="onSearch">
+      <div class="right-btn" v-if="!searchcContent.length" slot="action" @click="closeSearch">取消</div>
+      <div class="right-btn" v-else slot="action" @click="search(null)">搜索</div>
+    </van-search>
+  </div>
+  <div class="search-body">
+    <supplier-list></supplier-list>
+  </div>
+</div>
