@@ -3,11 +3,14 @@ import { Tag } from 'vant'
 Vue.use(Tag)
 import COMPANIES_ITEMS from '@/graphql/companies/companiesItem.gql'
 import _ from 'lodash'
+import companyItem from '@/components/supplier/list/item/main.vue'
 
 export default {
+  components: {
+    companyItem
+  },
   data () {
     return {
-      defaultUrl: require('./images/logo_blank.png'),
       limit: 30,
       items: [],
       currentType:'merchant',
@@ -19,6 +22,9 @@ export default {
     }
   },
   props: {
+    companyType: {
+      type: String
+    },
     filterParams: {
       type: String
     },

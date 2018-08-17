@@ -1,4 +1,4 @@
-import supplierList from '@/components/supplier/list/main.vue'
+import companyList from '@/components/supplier/list/main.vue'
 import search from '@/components/supplier/search/main.vue'
 import screen from '@/components/supplier/screen/main.vue'
 import MENU_ITEMS from '@/graphql/menus/menuItems.gql'
@@ -12,6 +12,7 @@ export default {
       showLeft: false,
       menuList: [],
       currentType: 'all',
+      companyType: 'all',
       filterParams: null,
       filterArea: []
     }
@@ -31,7 +32,7 @@ export default {
     }
   },
   components: {
-    supplierList,
+    companyList,
     search,
     screen
   },
@@ -65,10 +66,17 @@ export default {
     changeCompanyType(value) {
       if (!this.currentType || this.currentType !== value) {
         this.currentType = value
-        this.$emit('companyTypeChanged', value)
+        if (this.currentType === 'company') {
+          this.companyType = '公司'
+        }
+        if (this.currentType === 'merchants') {
+          this.companyType = '商户'
+        }
       } else {
         this.currentType = 'all'
-        this.$emit('companyTypeChanged', 'all')
+        if (this.currentType === 'all') {
+          this.companyType = 'all'
+        }
       }
     }
   },

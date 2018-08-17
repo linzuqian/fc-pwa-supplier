@@ -1,5 +1,5 @@
-query($take: Int, $skip: Int, $province: String, $city: String, $type: String, $categoryIdsByOr: String, $categoryId: String) {
-  companies(take: $take, skip: $skip, province: $province, city: $city, type: $type, categoryIdsByOr: $categoryIdsByOr, categoryId: $categoryId) {
+query($take: Int, $keyword: String $skip: Int, $province: String, $city: String, $type: String, $categoryIdsByOr: String, $categoryId: String) {
+  companies(take: $take, keyword: $keyword, skip: $skip, province: $province, city: $city, type: $type, categoryIdsByOr: $categoryIdsByOr, categoryId: $categoryId) {
     items {
       id
       logoUrl

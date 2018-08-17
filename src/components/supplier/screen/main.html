@@ -1,7 +1,8 @@
 <div class="screen-index">
   <div class="location">
     <h3>所在地</h3>
-    <van-button type="default" class="location-search" @click="openSearch">请选择地区</van-button>
+    <van-button type="default" :class="{activated:actived}" @click="switchSearch">{{province}}</van-button>
+    <van-button type="default" :class="{activated:actived}" @click="switchSearch" v-if="this.city !== ''">{{city}}</van-button>
   </div>
   <div class="category">
     <h3>服装</h3>
@@ -13,7 +14,7 @@
     <div class="btn reset">重置</div>
     <div class="btn confirm">确定</div>
   </div>
-  <van-popup v-model="search" position="bottom" :overlay="false">
-    <van-area></van-area>
+  <van-popup v-model="select" position="bottom" >
+    <van-area :area-list="areaList" :columns-num="2" @cancel="switchSearch" @confirm="confirmArea"></van-area>
   </van-popup>
 </div>

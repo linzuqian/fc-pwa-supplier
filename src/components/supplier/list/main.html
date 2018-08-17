@@ -1,40 +1,7 @@
 <div class="supplier-list">
   <van-pull-refresh v-model="isRefreshing" @refresh="onRefresh" :disabled="disablePullRefresh" ref="scroller">
     <div class="list-box" v-for="item in items" >
-      <div class="list-left">
-        <div v-if="item.logoUrl" class="img-box" :style="`background-image:url(${item.logoUrl})`"></div>
-        <div v-else class="img-box" :style="`background-image:url(${defaultUrl})`"></div>
-      </div>
-      <div class="list-center">
-        <div class="list-center-title">
-          <span><b>{{item.brandName}}</b></span>
-          <template v-if="item.verifyStatus === 1 || item.verifyStatus === 'Pass'">
-            <van-tag type="primary" class="tag-blue" v-if="!item.notAllPass">企业</van-tag>
-            <van-tag class="tag-violet" v-else>商户</van-tag>
-            <van-tag type="danger" class="tag-red">已认证</van-tag>
-          </template>
-          <template v-else>
-            <van-tag>商户</van-tag>
-            <van-tag>未认证</van-tag>
-          </template>
-        </div>
-        <div class="list-center-address">
-          <span v-if="item.isIndividual" class="img-box">
-            <img src="./images/individual.svg" alt="">
-          </span>
-          <span v-if='item.hasProducts & !item.hasSites' class="img-box">
-            <img src="./images/shop.svg" alt="">
-          </span>
-          <span v-if="item.hasSites && item.hasPublishedSites" class="img-box">
-            <img src="./images/official.svg" alt="">
-          </span>
-          <span>{{item.ResidentCountry ? item.ResidentCountry : '中国'}} {{ item.residentProvince }}</span>
-        </div>
-      </div>
-      <div class="list-right">
-        <van-button type="danger" plain>添加好友</van-button>
-      </div>
-      
+      <company-item :item="item"></company-item>
     </div>
     <template>
       <infinite-loading v-if="isNeedLoad && isCurrent" @infinite="infiniteHandler" ref="infiniteLoading">

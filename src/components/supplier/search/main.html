@@ -1,15 +1,21 @@
 <div class="search-index">
   <div class="search-header">
     <van-search
-      v-model="searchcContent"
+      v-model="keyword"
       placeholder="请输入搜索关键词"
       show-action
       @search="onSearch">
       <div class="right-btn" v-if="!searchcContent.length" slot="action" @click="closeSearch">取消</div>
-      <div class="right-btn" v-else slot="action" @click="search(null)">搜索</div>
+      <div class="right-btn" v-else slot="action" @click="onSearch(null)">搜索</div>
     </van-search>
   </div>
   <div class="search-body">
-    <supplier-list></supplier-list>
+    <template v-for="item in items">
+      <company-item :item="item"></company-item>
+    </template>
+    <infinite-loading v-if='openInfinite' @infinite="onInfinite" ref="infiniteLoading">
+        <span slot='no-more'>没有更多数据</span>
+        <span slot='no-results'>没有更多数据</span>
+      </infinite-loading>
   </div>
 </div>

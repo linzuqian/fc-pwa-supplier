@@ -10,13 +10,14 @@
   <div class="supplier-body">
     <van-tabs v-model="active">
       <van-tab  v-for="(elem,index) in menuList" :title="elem.title" :key="index">
-        <supplier-list 
+        <company-list 
           :actionArgs="getActionArgs(elem)" 
           :isCurrent="index === active" 
           :key="index"
-          :filterParams="filterParams" 
+          :companyType="companyType"    
+          :filterParams="filterParams"
           :filterArea="filterArea">
-        </supplier-list>
+        </company-list>
       </van-tab>
     </van-tabs>
   </div>
@@ -25,7 +26,7 @@
     position="left"
     class="popup-search"
     >
-    <search @closes="openSearch"></search>
+    <search @closes="openSearch" :Type="companyType"></search>
   </van-popup>
   <van-popup 
     v-model="showRight"
