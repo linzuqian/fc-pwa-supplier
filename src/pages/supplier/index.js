@@ -52,16 +52,14 @@ export default {
         if (Object.keys(val1).length) {
           Object.keys(val1).forEach((key) => {
             if (val1[key].length) {
-              // this.filterParams.push(`${key}=${val1[key]}`)
               this.filterParams.push(`${val1[key]}`)
             }
           })
           this.filterParams = this.filterParams.join('&')
         }
       }
-      this.slide(0)
       this.filterArea = val2
-      this.showFilter = false
+      this.showRight = false
     },
     changeCompanyType(value) {
       if (!this.currentType || this.currentType !== value) {

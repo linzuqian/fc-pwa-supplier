@@ -1,32 +1,29 @@
 .screen-index {
   background-color: #fff;
-  .location {
-    padding-left: 15px;
-    .van-button{
-      margin: 5px 10px 5px 0;
-      &.activated {
-        border: 1px solid #1f8ceb !important;
-        background: #f0f8ff;
-        color: #1f8ceb !important;
-        border-radius: 5px;
-        background-image: url("./images/checked.svg");
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: 17px 17px;
-      }
-    }
-  }
-  .category{
-    padding-left: 15px;
-    .checkbox-box{
+  .attr-select-list{
+    position: absolute;
+    top:0;
+    bottom: 45px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    .location {
+      padding-left: 15px;
       .van-button{
         margin: 5px 10px 5px 0;
+      }
+    }
+    .category{
+      padding-left: 15px;
+      .checkbox-box{
+        .van-button{
+          margin: 5px 10px 5px 0;
+        }
       }
     }
   }
   .btn-box{
     width: 100%;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     display: flex;
     justify-content: flex-start;
@@ -47,5 +44,15 @@
   .van-button{
     height: 30px;
     line-height: 26px;
+  }
+  .activated {
+    border: 1px solid #1f8ceb !important;
+    background: #f0f8ff;
+    color: #1f8ceb !important;
+    border-radius: 5px;
+    background-image: url("./images/checked.svg");
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 17px 17px;
   }
 }
