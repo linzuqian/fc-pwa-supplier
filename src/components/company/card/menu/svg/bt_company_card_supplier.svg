@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2219 82 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1f8ceb;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="bt_company_card_supplier" transform="translate(2170 -261)">
+    <g id="Group_3883" data-name="Group 3883" transform="translate(51.624 345.598)">
+      <path id="Path_1890" data-name="Path 1890" class="cls-1" d="M18.085,10.493H.972A.974.974,0,0,1,0,9.52V4.172A.974.974,0,0,1,.972,3.2H18.085a.974.974,0,0,1,.972.972V9.52A.919.919,0,0,1,18.085,10.493ZM.972,4.075a.1.1,0,0,0-.1.1V9.52a.1.1,0,0,0,.1.1H18.085a.1.1,0,0,0,.1-.1V4.172a.1.1,0,0,0-.1-.1Z" transform="translate(0 -0.088)"/>
+      <path id="Path_1891" data-name="Path 1891" class="cls-1" d="M16.2,19.329H2.972A.974.974,0,0,1,2,18.357V9.8H17.266v8.557A1.06,1.06,0,0,1,16.2,19.329ZM2.875,10.675v7.681a.1.1,0,0,0,.1.1H16.2a.1.1,0,0,0,.1-.1V10.675Z" transform="translate(-0.055 -0.27)"/>
+      <rect id="Rectangle_3733" data-name="Rectangle 3733" class="cls-1" width="0.875" height="15.557" transform="translate(9.14 3.112)"/>
+      <path id="Path_1892" data-name="Path 1892" class="cls-1" d="M11.626,3.987H2V.876A1.2,1.2,0,0,1,2.389.1.831.831,0,0,1,3.07.1ZM2.875,3.112H7.64L2.875.973Z" transform="translate(-0.055 0)"/>
+      <path id="Path_1893" data-name="Path 1893" class="cls-1" d="M17.329,3.987H7.8L16.259.1a.831.831,0,0,1,.681,0,.884.884,0,0,1,.389.778Zm-5.542-.875h4.764V.973Z" transform="translate(-0.216)"/>
+    </g>
+    <rect id="Rectangle_2630" data-name="Rectangle 2630" class="cls-2" width="24" height="24" transform="translate(49 343)"/>
+  </g>
+</svg>

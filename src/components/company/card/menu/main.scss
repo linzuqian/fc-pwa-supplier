@@ -1,0 +1,28 @@
+.card-menu{
+  background-color: #fff;
+  margin-bottom: 5px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  .menu-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    li{
+      text-align: center;
+      width: 25%;
+      border-right: 1px solid #ddd;
+      &:last-child{
+        border: none;
+      }
+      img{
+        width: 25px;
+        height: 25px;
+      }
+      div{
+        font-size: 12px;
+      }
+    }
+  }
+}

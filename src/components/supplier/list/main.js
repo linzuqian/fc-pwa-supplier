@@ -57,20 +57,20 @@ export default {
     }
   },
   computed: {
-    isNeedLoad() {
+    isNeedLoad () {
       if (this.currentType == 'merchant' || this.currentType == 'company') {
         return true
       } else {
         return false
       }
     },
-    Province() {
+    Province () {
       if (_.get(this.filterArea, '[0].name')) {
         return _.get(this.filterArea, '[0].name')
       }
       return ''
     },
-    City() {
+    City () {
       if (_.get(this.filterArea, '[1].name')) {
         return _.get(this.filterArea, '[1].name')
       }
@@ -78,10 +78,10 @@ export default {
     }
   },
   watch: {
-    companyType(val) {
+    companyType (val) {
       this.onRefresh()
     },
-    filterParams(val) {
+    filterParams (val) {
       this.onRefresh()
     }
   },
@@ -96,7 +96,15 @@ export default {
     }, 200))
   },
   methods: {
-    onRefresh() {
+    toCompany (item) {
+      this.$router.push({ 
+        name: 'company-card',
+        params: { 
+          card: item.id
+        } 
+      })
+    },
+    onRefresh () {
       setTimeout(() => {
         this.loadDown = false
         this.items = []
@@ -106,7 +114,7 @@ export default {
         }
       }, 500)
     },
-    infiniteHandler($state) {
+    infiniteHandler ($state) {
       if (this.page === -1) {
         this.skipQuery = false
         this.page = 0
@@ -115,8 +123,8 @@ export default {
         this.loadMore($state)
       }
     },
-    loadMore($state) {
-      if(!this.loadDown){
+    loadMore ($state) {
+      if(!this.loadDown) {
         this.$apollo.queries.companies.fetchMore({
           variables: {
             skip: (this.page * this.limit) < 0 ? 0 : (this.page * this.limit),
@@ -140,13 +148,13 @@ export default {
             }
           }
         })
-      }else{
+      } else {
         $state.complete()
         this.isRefreshing = false
       }
     }
   },
-  beforeDestroy() {
+  beforeDestroy () {
     const scroller = _.get(this.$refs, 'scroller.$el')
     if (scroller) {
       scroller.removeEventListener('scroll', () => {})

@@ -1,0 +1,25 @@
+query($id: ID!) {
+  companyById(id: $id) {
+    aboutUs
+    address
+    name
+    brandName
+    logoUrl
+    residentArea
+    verifyStatus
+    notAllPass
+    residentCity
+    residentCountry
+    residentProvince
+    serviceTel
+    visualizationImgUrl
+    serviceTelImgEncodedData
+    customMainBusiness
+    categories {
+      items {
+        typeId
+      	name
+      }
+    }
+  }
+}

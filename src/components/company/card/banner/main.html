@@ -1,0 +1,30 @@
+<div class="card-banner">
+    
+  <div class="banner-img" :style="`background-image:url(${company.visualizationImgUrl?company.visualizationImgUrl:defaultUrl})`"></div>
+  <div class="banner-detail">
+    <div class="banner-detail-info">
+      <div class="detail-left">
+        <div class="img-box" :style="`background-image:url(${company.logoUrl?company.logoUrl:defaultUser})`"></div>
+      </div>
+      <div class="detail-center">
+        <div class="center-title">
+          <span>{{company.brandName}}</span>
+        </div>
+        <div class="center-tag">
+          <template v-if="company.verifyStatus === 1 || company.verifyStatus === 'Pass'">
+            <van-tag type="primary" class="tag-blue" v-if="!company.notAllPass">企业</van-tag>
+            <van-tag class="tag-violet" v-else>商户</van-tag>
+            <van-tag type="danger" class="tag-red">已认证</van-tag>
+          </template>
+          <template v-else>
+            <van-tag>商户</van-tag>
+            <van-tag>未认证</van-tag>
+          </template>
+        </div>
+      </div>
+      <div class="detail-right">
+        <van-button size="mini" type="primary">关注</van-button>
+      </div>
+    </div>
+  </div>
+</div>

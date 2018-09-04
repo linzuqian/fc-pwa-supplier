@@ -1,0 +1,22 @@
+<div class="amap-wrapper">
+  <div class="back" @click="back">
+    <van-icon name="arrow-left" slot="left"/>
+  </div>
+  <el-amap class="amap-box" vid="amapDemo" :scrollWheel="scrollWheel" :zoom="zoom" :events="events" :center="center">
+    <el-amap-marker 
+    v-for="(marker, index) in markers" 
+    :key="`marker${index}`"
+    :position="marker.position" 
+    :visible="marker.visible" 
+    :draggable="marker.draggable" 
+    :vid="index"></el-amap-marker>
+    <el-amap-info-window
+      v-for="(marker, index) in markers"
+      :key="`infowindow${index}`"
+      :position="marker.infoPosition"
+      :visible="marker.visible"
+      :content="marker.content"
+      >
+    </el-amap-info-window>
+  </el-amap>
+</div>

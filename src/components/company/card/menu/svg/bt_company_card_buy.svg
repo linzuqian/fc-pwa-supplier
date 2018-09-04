@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2312 82 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #1f8ceb;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="bt_company_card_buy" transform="translate(-198 -25)">
+    <g id="Group_4066" data-name="Group 4066" transform="translate(2514.181 110.303)">
+      <path id="Path_2204" data-name="Path 2204" class="cls-1" d="M12.636.5H1.412A.847.847,0,0,0,.5,1.381V16.619a.847.847,0,0,0,.912.881H14.643a.847.847,0,0,0,.912-.881V5.609" transform="translate(0 0)"/>
+      <line id="Line_215" data-name="Line 215" class="cls-1" x2="5.566" transform="translate(2.507 7.526)"/>
+      <line id="Line_216" data-name="Line 216" class="cls-1" x2="11.132" transform="translate(2.507 10.993)"/>
+      <line id="Line_217" data-name="Line 217" class="cls-1" x2="11.132" transform="translate(2.507 14.461)"/>
+      <path id="Path_2205" data-name="Path 2205" class="cls-1" d="M10.6,7.526C10.691,7.526,17.808.5,17.808.5" transform="translate(-0.884 0)"/>
+    </g>
+    <rect id="Rectangle_2630" data-name="Rectangle 2630" class="cls-2" width="24" height="24" transform="translate(2510 107)"/>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+.card-detail{
+  .van-cell-group {
+    margin-bottom: 5px;
+    .van-cell{
+      .van-cell__title{
+        flex: 0;
+        flex-basis: 90px;
+      }
+      .van-cell__value{
+        text-align: left;
+      }
+      .spancss {
+        display: inline-block;
+        width: 10px !important;
+        margin-top: -7px;
+        height: 24px;
+        transform: translate(0, 40%);
+        opacity: .7;
+      }
+    }
+  }
+  .van-popup{
+    width: 100%;
+    height: 100%;
+  }
+}

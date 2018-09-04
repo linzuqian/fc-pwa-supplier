@@ -10,9 +10,11 @@
   "dependencies": {
     "apollo-link-http": "^1.5.4",
     "axios": "^0.18.0",
+    "pako": "^1.0.6",
     "sass-loader": "^7.1.0",
     "vant": "^1.1.16",
     "vue": "^2.5.17",
+    "vue-amap": "^0.5.8",
     "vue-apollo": "^3.0.0-beta.10",
     "vue-infinite-loading": "^2.3.2",
     "vue-router": "^3.0.1"

@@ -1,7 +1,7 @@
 <div class="supplier-list">
   <van-pull-refresh v-model="isRefreshing" @refresh="onRefresh" :disabled="disablePullRefresh" ref="scroller">
     <div class="list-box" v-for="item in items" >
-      <company-item :item="item"></company-item>
+      <company-item :item="item" @click="toCompany(item)"></company-item>
     </div>
     <template>
       <infinite-loading v-if="isNeedLoad && isCurrent" @infinite="infiniteHandler" ref="infiniteLoading">

@@ -1,0 +1,60 @@
+.card-banner {
+  position: relative;
+  .banner-img {
+    background-size: cover;
+    padding-top: 43.4783%;
+  }
+  .banner-detail {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    .banner-detail-info {
+      height: 70px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: 0 15px 15px 25px;
+      .detail-left {
+        .img-box {
+          width: 50px;
+          height: 50px;
+          background-size: cover;
+        }
+      }
+      .detail-center {
+        flex: 1;
+        padding-left: 10px;
+        .center-title {
+          margin-bottom: 3px;
+
+          span {
+            background-color: #fff;
+            padding: 0 6px;
+            border-radius: 3px;
+          }
+        }
+        .center-tag{
+          .van-hairline--surround{
+            border-radius: 10px;
+            &::after{
+              border: none;
+            }
+            &.tag-blue{
+              background-image: linear-gradient(90deg,#67b9ff,#408aff);
+            }
+            &.tag-red{
+              background-image: linear-gradient(90deg,#ff9d9d,#ff3131);
+            }
+            &.tag-violet{
+              background-image: linear-gradient(90deg,#9974fc,#593adb);
+            }
+            &:nth-child(2){
+              margin: 0 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

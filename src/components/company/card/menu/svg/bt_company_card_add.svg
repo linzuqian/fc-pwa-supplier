@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2405 82 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #1f8ceb;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <g id="bt_company_card_add" transform="translate(-87 -10)">
+    <g id="Group_4064" data-name="Group 4064" transform="translate(2493.688 93.648)">
+      <ellipse id="Ellipse_145" data-name="Ellipse 145" class="cls-1" cx="6.141" cy="6.141" rx="6.141" ry="6.141" transform="translate(3.417 0.4)"/>
+      <path id="Path_2203" data-name="Path 2203" class="cls-1" d="M.4,19.773A9.28,9.28,0,0,1,9.558,11.8a9.841,9.841,0,0,1,5.279,1.616" transform="translate(0 0.882)"/>
+      <g id="Group_4063" data-name="Group 4063" transform="translate(14.837 15.699)">
+        <line id="Line_213" data-name="Line 213" class="cls-1" x2="5.387" transform="translate(0 2.694)"/>
+        <line id="Line_214" data-name="Line 214" class="cls-1" y2="5.387" transform="translate(2.694)"/>
+      </g>
+    </g>
+    <rect id="Rectangle_2630" data-name="Rectangle 2630" class="cls-2" width="24" height="24" transform="translate(2492 92)"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2125 82 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #1f8ceb;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 0.9px;
+      }
+
+      .cls-2 {
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <g id="bt_company_card_home" transform="translate(2125 82)">
+    <g id="Group_4068" data-name="Group 4068" transform="translate(3.24 3.138)">
+      <path id="Path_2206" data-name="Path 2206" class="cls-1" d="M2.3,12.9v4.946a.924.924,0,0,0,.927.927H17.036a.924.924,0,0,0,.927-.927V12.9" transform="translate(-1.475 -1.05)"/>
+      <path id="Path_2207" data-name="Path 2207" class="cls-2" d="M4.179,1.4H16.442l2.473,4.122.1,3.091s0,2.988-2.061,2.988c-2.267,0-2.37-2.988-2.37-2.988s0,2.988-2.164,2.988c-2.267,0-2.267-2.988-2.267-2.988s.1,2.988-2.164,2.988c-2.164,0-2.164-2.988-2.164-2.988S5.725,11.6,3.561,11.6,1.5,8.613,1.5,8.613V5.522Z" transform="translate(-1.499 -1.4)"/>
+      <line id="Line_218" data-name="Line 218" class="cls-2" x2="17.415" transform="translate(0.001 4.122)"/>
+    </g>
+    <rect id="Rectangle_3766" data-name="Rectangle 3766" class="cls-3" width="24" height="24"/>
+  </g>
+</svg>

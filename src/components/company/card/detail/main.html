@@ -1,0 +1,27 @@
+<div class="card-detail">
+  <van-cell-group>
+    <van-cell title="品牌名称" :value="company.brandName" />
+    <van-cell title="公司全称" :value="company.name" />
+    <van-cell title="所在地区" :value="address" />
+    <van-cell title="详细地址" :value="company.address?company.address:address" @click="openMap"/>
+    <van-cell title="联系方式">
+      <template v-if="company.serviceTelImgEncodedData" slot="">
+        <span class="spancss" v-for="item in decodedData(company.serviceTelImgEncodedData).Index" :style="`background-image:url(${decodedData(company.serviceTelImgEncodedData).ImgUri});background-size:cover;background-repeat:no-repeat;background-position: -${item.OffsetX/6}px -${item.OffsetY/6}px;`"></span>
+      </template>
+      <template v-else>
+        <span>暂无联系方式</span>
+      </template>
+    </van-cell>
+    <van-cell title="公司简介" :value="company.aboutUs" />
+  </van-cell-group>
+  <van-cell-group>
+    <van-cell title="经营类型" :value="companyType" />
+    <van-cell title="供应链类别" :value="businessType" />
+    <van-cell title="所属行业" :value="businessProp" />
+    <van-cell title="主营产品" :value="businessCategory" />
+    <van-cell title="经营范围" :value="company.customMainBusiness" />
+  </van-cell-group>
+  <van-popup v-model="showMap" position="right">
+    <company-amap :address="address + `${company.address ? company.address : ''}`" @close="closeMap"></company-amap>
+  </van-popup>
+</div>
