@@ -18,8 +18,7 @@ export default {
     return {
       zoom: 12,
       center: [116.397428, 39.90923],
-      scrollWheel:true,
-      placeSearch : new AMap.PlaceSearch({ 
+      placeSearch: new AMap.PlaceSearch({ 
         pageSize: 5,
         pageIndex: 1,
         city: "" 

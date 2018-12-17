@@ -2,6 +2,7 @@ import cardBanner from '@/components/company/card/banner/main.vue'
 import cardMenu from '@/components/company/card/menu/main.vue'
 import cardDetail from '@/components/company/card/detail/main.vue'
 import COMPANY_BY_ID from '@/graphql/companies/companiesById.gql'
+import _ from 'lodash'
 
 export default {
   name: 'company-card',
